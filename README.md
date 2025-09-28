@@ -1,3 +1,4 @@
 # luogu
-hi there
-this is my answers for questions on <luogu.com.cn>
+Hi there
+This is my answers for questions on <luogu.com.cn>
+Most of these questions are related to algorithms.
