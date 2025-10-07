@@ -1,6 +1,4 @@
-#include <bits/stdc++.h>
-#include <iostream>
-#include <iomanip>
+#include<bits/stdc++.h>
 //#include<cstdio>
 //#include<iostream>
 //#include<iostream>
@@ -33,10 +31,9 @@
 //#include<bitset>
 
 using namespace std;
+
 int main(){
-    int a,b;
-    scanf("%d",&a);
-    b=++a;
-    printf("%d%d",a,b);
+    printf("ÄãºÃ");
+    
     return 0;
 }
