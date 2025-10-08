@@ -57,7 +57,7 @@ int main(){
             }
             else if(b.compare("query")==0){
                 if(status==0)printf("Anguei!\n");
-                else printf("%lld\n",a[status]);
+                else printf("%llu\n",a[status]);
                 //continue;
             }
             else printf("%d\n",status);

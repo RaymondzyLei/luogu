@@ -31,11 +31,15 @@
 //#include<bitset>
 
 using namespace std;
-
+//快读
 int main(){
-    int a,b;
-    scanf("%d",&a);
-    b=a<<1;
-    printf("%d %d",a,b);
+    int t;
+    long long a,b;
+    scanf("%d",&t);
+    for(int i=1;i<=t;i++){
+        scanf("%lld%lld",&a,&b);
+        
+    }
+    
     return 0;
 }

@@ -31,11 +31,22 @@
 //#include<bitset>
 
 using namespace std;
-
+long long quickmi(long long base,long long power,long long mod){
+    long long ans=1;
+    while(power>0){
+        base%=mod;
+        if(power&1){
+            ans*=base;
+            ans%=mod;
+        }
+        base*=base;
+        power>>=1;
+    }
+    return ans;
+}
 int main(){
-    int a,b;
-    scanf("%d",&a);
-    b=a<<1;
-    printf("%d %d",a,b);
+    long long a,b,p;
+    scanf("%lld%lld%lld",&a,&b,&p);
+    printf("%lld^%lld mod %lld=%lld",a,b,p,quickmi(a,b,p));
     return 0;
 }

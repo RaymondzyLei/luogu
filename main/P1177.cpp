@@ -33,9 +33,16 @@
 using namespace std;
 
 int main(){
-    int a,b;
-    scanf("%d",&a);
-    b=a<<1;
-    printf("%d %d",a,b);
+    int n;
+    long long int a[100001];
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        scanf("%lld",a+i);
+    }
+    sort(a+1,a+n+1);
+    for(int i=1;i<n;i++){
+        printf("%lld ",*(a+i));
+    }
+    printf("%lld\n",a[n]);
     return 0;
 }

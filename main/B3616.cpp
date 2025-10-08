@@ -33,9 +33,26 @@
 using namespace std;
 
 int main(){
-    int a,b;
-    scanf("%d",&a);
-    b=a<<1;
-    printf("%d %d",a,b);
+    int n,a[10001],tmp;
+    int head=1,end=0;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        scanf("%d",&tmp);
+        switch(tmp){
+            case 1:
+            scanf("%d",&a[++end]);
+            break;
+            case 2:
+            if(head>end) printf("ERR_CANNOT_POP\n");
+            else head++;
+            break;
+            case 3:
+            if(head>end) printf("ERR_CANNOT_QUERY\n");
+            else printf("%d\n",a[head]);
+            break;
+            case 4:
+            printf("%d\n",end-head+1);
+        }
+    }
     return 0;
 }
